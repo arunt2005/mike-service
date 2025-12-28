@@ -1,3 +1,8 @@
 spring:
   application:
     name: mike-service
+
+weather:
+  api:
+    url: https://api.openweathermap.org/data/2.5/weather
+    key: a6c808cc8308c387251cedba02ad7cde
