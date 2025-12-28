@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MikeController {
 
-    @GetMapping
+    @GetMapping("/mike")
     public ResponseEntity<String> msg() {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.TEXT_PLAIN);

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Detailed Weather Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌍 World Weather Report</h1>
+
+    <input id="cityInput" placeholder="Enter city name">
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div id="card" class="card hidden">
+
+        <h2 id="city"></h2>
+        <p id="country"></p>
+
+        <img id="icon">
+        <p id="weatherDesc"></p>
+
+        <div class="section">
+            <h3>🌡 Temperature</h3>
+            <p>Temp: <span id="temp"></span> °C</p>
+            <p>Feels Like: <span id="feels"></span> °C</p>
+            <p>Min: <span id="min"></span> °C</p>
+            <p>Max: <span id="max"></span> °C</p>
+        </div>
+
+        <div class="section">
+            <h3>🌬 Wind & Atmosphere</h3>
+            <p>Wind Speed: <span id="wind"></span> m/s</p>
+            <p>Wind Degree: <span id="deg"></span>°</p>
+            <p>Pressure: <span id="pressure"></span> hPa</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Visibility: <span id="visibility"></span> m</p>
+        </div>
+
+        <div class="section">
+            <h3>🌍 Location</h3>
+            <p>Latitude: <span id="lat"></span></p>
+            <p>Longitude: <span id="lon"></span></p>
+            <p>Clouds: <span id="clouds"></span>%</p>
+        </div>
+
+        <div class="section">
+            <h3>🌅 Sun</h3>
+            <p>Sunrise: <span id="sunrise"></span></p>
+            <p>Sunset: <span id="sunset"></span></p>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

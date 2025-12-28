@@ -18,7 +18,6 @@ public class WeatherService {
 
     public String getWeatherByCity(String city) {
         String url = apiUrl + "?q=" + city + "&appid=" + apiKey + "&units=metric";
-        System.out.println("url = " + url);
         return restTemplate.getForObject(url, String.class);
     }
 }
